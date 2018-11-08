@@ -18,7 +18,7 @@ namespace InternshipLogger.ModelLayer
         //private dynamic myLog = new ExpandoObject();
         private Log myLog = new Log();
 
-        private string filepath = "C:/Users/Quokka/source/repos/InternshipLogger/InternshipLogger/DataLayer/Log.json";
+        private string filepath = "E:/Documents/UCN/ComputerScience_AP/Semester_5/Log.json";
         // This need to be implemented so the path works for every machine
         //Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"DataLayer/Log.json");
         private string result = string.Empty;
@@ -30,10 +30,13 @@ namespace InternshipLogger.ModelLayer
             LoadJSON();
         }
 
-        public void AddLogEntry(string title, DateTime date, string description, string author)
+        public void AddLogEntry(string title, DateTime date, DateTime startTime, DateTime endTime, DateTime hoursWorked, string description, string author)
         {
             myLog.Title = title;
             myLog.Date = date;
+            myLog.StartTime = startTime;
+            myLog.EndTime = endTime;
+            myLog.HoursWorked = hoursWorked;
             myLog.Description = description;
             myLog.Author = author;
 

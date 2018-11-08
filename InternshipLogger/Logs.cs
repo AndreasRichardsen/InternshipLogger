@@ -29,8 +29,8 @@ namespace InternshipLogger
                 Console.WriteLine(LogsListBox.SelectedIndex);
                 int LogIndex = LogsListBox.SelectedIndex;
                 Log selectedLog = logController.logResults[LogIndex];
-                MessageBox.Show(String.Format("Title: {0} \nDate: {1} \nDescription: {2} \nAuthor: {3}",
-                    selectedLog.Title, selectedLog.Date, selectedLog.Description, selectedLog.Author));
+                MessageBox.Show(String.Format("Title: {0} \n\nDate: {1} \n\nStart Time: {2} \n\nEnd Time: {3} \n\nHours Worked: {4} \n\nDescription: {5} \n\nAuthor: {6}",
+                    selectedLog.Title, selectedLog.Date, selectedLog.StartTime.TimeOfDay, selectedLog.EndTime.TimeOfDay, selectedLog.HoursWorked.TimeOfDay, selectedLog.Description, selectedLog.Author));
             }
             
         }

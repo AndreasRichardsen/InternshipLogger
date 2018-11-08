@@ -38,6 +38,12 @@
             this.DescriptionLabel = new System.Windows.Forms.Label();
             this.AuthorLabel = new System.Windows.Forms.Label();
             this.BackToStartButton = new System.Windows.Forms.Button();
+            this.StartTimeLabel = new System.Windows.Forms.Label();
+            this.EndTimeLabel = new System.Windows.Forms.Label();
+            this.HoursWorkedLabel = new System.Windows.Forms.Label();
+            this.StartTimeTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.EndTimeTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.HoursWorkedTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // TitleTextBox
@@ -125,11 +131,77 @@
             this.BackToStartButton.UseVisualStyleBackColor = true;
             this.BackToStartButton.Click += new System.EventHandler(this.BackToStartButton_Click);
             // 
+            // StartTimeLabel
+            // 
+            this.StartTimeLabel.AutoSize = true;
+            this.StartTimeLabel.Location = new System.Drawing.Point(275, 66);
+            this.StartTimeLabel.Name = "StartTimeLabel";
+            this.StartTimeLabel.Size = new System.Drawing.Size(55, 13);
+            this.StartTimeLabel.TabIndex = 13;
+            this.StartTimeLabel.Text = "Start Time";
+            // 
+            // EndTimeLabel
+            // 
+            this.EndTimeLabel.AutoSize = true;
+            this.EndTimeLabel.Location = new System.Drawing.Point(359, 66);
+            this.EndTimeLabel.Name = "EndTimeLabel";
+            this.EndTimeLabel.Size = new System.Drawing.Size(52, 13);
+            this.EndTimeLabel.TabIndex = 14;
+            this.EndTimeLabel.Text = "End Time";
+            // 
+            // HoursWorkedLabel
+            // 
+            this.HoursWorkedLabel.AutoSize = true;
+            this.HoursWorkedLabel.Location = new System.Drawing.Point(448, 66);
+            this.HoursWorkedLabel.Name = "HoursWorkedLabel";
+            this.HoursWorkedLabel.Size = new System.Drawing.Size(76, 13);
+            this.HoursWorkedLabel.TabIndex = 15;
+            this.HoursWorkedLabel.Text = "Hours Worked";
+            // 
+            // StartTimeTimePicker
+            // 
+            this.StartTimeTimePicker.Cursor = System.Windows.Forms.Cursors.Default;
+            this.StartTimeTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.StartTimeTimePicker.Location = new System.Drawing.Point(278, 86);
+            this.StartTimeTimePicker.Name = "StartTimeTimePicker";
+            this.StartTimeTimePicker.ShowUpDown = true;
+            this.StartTimeTimePicker.Size = new System.Drawing.Size(75, 20);
+            this.StartTimeTimePicker.TabIndex = 17;
+            this.StartTimeTimePicker.Value = new System.DateTime(2018, 8, 20, 21, 13, 16, 0);
+            // 
+            // EndTimeTimePicker
+            // 
+            this.EndTimeTimePicker.Cursor = System.Windows.Forms.Cursors.Default;
+            this.EndTimeTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.EndTimeTimePicker.Location = new System.Drawing.Point(362, 86);
+            this.EndTimeTimePicker.Name = "EndTimeTimePicker";
+            this.EndTimeTimePicker.ShowUpDown = true;
+            this.EndTimeTimePicker.Size = new System.Drawing.Size(75, 20);
+            this.EndTimeTimePicker.TabIndex = 18;
+            this.EndTimeTimePicker.Value = new System.DateTime(2018, 8, 20, 21, 13, 16, 0);
+            // 
+            // HoursWorkedTimePicker
+            // 
+            this.HoursWorkedTimePicker.Cursor = System.Windows.Forms.Cursors.Default;
+            this.HoursWorkedTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.HoursWorkedTimePicker.Location = new System.Drawing.Point(451, 86);
+            this.HoursWorkedTimePicker.Name = "HoursWorkedTimePicker";
+            this.HoursWorkedTimePicker.ShowUpDown = true;
+            this.HoursWorkedTimePicker.Size = new System.Drawing.Size(75, 20);
+            this.HoursWorkedTimePicker.TabIndex = 19;
+            this.HoursWorkedTimePicker.Value = new System.DateTime(2018, 8, 20, 21, 13, 16, 0);
+            // 
             // AddNewLogEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.HoursWorkedTimePicker);
+            this.Controls.Add(this.EndTimeTimePicker);
+            this.Controls.Add(this.StartTimeTimePicker);
+            this.Controls.Add(this.HoursWorkedLabel);
+            this.Controls.Add(this.EndTimeLabel);
+            this.Controls.Add(this.StartTimeLabel);
             this.Controls.Add(this.BackToStartButton);
             this.Controls.Add(this.AuthorLabel);
             this.Controls.Add(this.DescriptionLabel);
@@ -159,6 +231,12 @@
         private System.Windows.Forms.Label DescriptionLabel;
         private System.Windows.Forms.Label AuthorLabel;
         private System.Windows.Forms.Button BackToStartButton;
+        private System.Windows.Forms.Label StartTimeLabel;
+        private System.Windows.Forms.Label EndTimeLabel;
+        private System.Windows.Forms.Label HoursWorkedLabel;
+        private System.Windows.Forms.DateTimePicker StartTimeTimePicker;
+        private System.Windows.Forms.DateTimePicker EndTimeTimePicker;
+        private System.Windows.Forms.DateTimePicker HoursWorkedTimePicker;
     }
 }
 

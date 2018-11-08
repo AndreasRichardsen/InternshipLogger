@@ -21,7 +21,7 @@ namespace InternshipLogger
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            new LogController().AddLogEntry(TitleTextBox.Text, DateTimePicker.Value, DescriptionTextBox.Text, AuthorTextBox.Text);
+            new LogController().AddLogEntry(TitleTextBox.Text, DateTimePicker.Value, StartTimeTimePicker.Value, EndTimeTimePicker.Value, HoursWorkedTimePicker.Value, DescriptionTextBox.Text, AuthorTextBox.Text);
 
             TitleTextBox.Clear();
             DescriptionTextBox.Clear();
